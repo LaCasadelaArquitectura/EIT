@@ -1,4 +1,9 @@
 
+body{
+    font-family: "Segoe UI",Arial,sans-serif;
+
+}
+
 .title{
     font-family: "Segoe UI",Arial,sans-serif;
     width: 100%;
@@ -9,7 +14,7 @@
     margin-right: auto;
     font-size: 120%;
     
-    padding: 30px 0px 30px 0px;
+    margin: 60px 0px 0px 0px;
 }
 
 .leftmenu{
@@ -99,3 +104,29 @@
     text-align: justify;
 
 }
+
+.ct{
+    margin-left: 11%;
+    font-size: 120%;
+    width: 76%;
+       
+
+
+}
+table, th, td {
+    border: 1px solid rgb(27, 27, 27);
+    border-collapse: collapse;
+    vertical-align: text-top;
+}
+
+ul.b {
+    list-style-type: square;
+    
+  }
+
+  h3{
+    margin-left: 11%;
+    font-size: 100%;
+
+  }
+  
