@@ -7,8 +7,9 @@
     background-color: rgb(81, 188, 255);
     margin-left: auto;
     margin-right: auto;
+    font-size: 120%;
     
-    padding: 20px;
+    padding: 30px 0px 30px 0px;
 }
 
 .leftmenu{
@@ -39,6 +40,62 @@
     margin:  0px 0px 10px 0px;
     padding: 2px 1px 1px 16px;
     font-size: 120%;
+}
 
+#sidenav h3{
+    font-family: "Segoe UI",Arial,sans-serif;
+    padding: 2px 1px 1px 16px;
+    font-size: 95%;
+}
+
+.main {
+    position: fixed;
+    display: inline-block;
+    margin-left: 220px;
+    margin-right: auto;
+    width: 78%;
+    height: 100%;
+  
+  border: 1px solid rgb(27, 27, 27);    
+  background-color: rgb(255, 255, 255); 
+}
+
+.h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+
+}
+
+#banderaeuropa{
+
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+#ne2one{
+    display: block;
+    float: right;
+    margin-right: 10%;
+
+}
+
+.h3 {
+    margin-left: 11%;
+    font-size: 120%;
+    width: 78%;
+    background-color: rgba(81, 81, 81, 0.319); 
+}
+
+.p{
+    margin-left: 11%;
+    font-size: 120%;
+    width: 76%;
+    border: 1px solid rgb(27, 27, 27);   
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
 
 }
