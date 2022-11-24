@@ -3,7 +3,10 @@ body {
     font-family: "Segoe UI",Arial,sans-serif;
   
 }
+.dropdownn{
 
+    display: none;
+}
 .title{
    flex: auto;
     font-family: "Segoe UI",Arial,sans-serif;
@@ -30,6 +33,7 @@ ul.sidenav {
   margin: 0;
   padding: 0;
   width: 25%;
+  max-width: 280px;
   background-color: #e8f7ff;
   position: fixed;
   height: 100%;
@@ -60,31 +64,113 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
 }
+.dropbtn{display: none;}
 
 @media screen and (max-width: 900px) {
-  ul.sidenav {
-    width: 100%;
-    height: auto;
+ 
+    .dropdownn{
+        display: contents;
+
+    }
+.title{
+    font-size: 80%;
+    padding: 3px;
+    margin: 0px;
+    height: 80px;
+}
+.sidenav{
+    display: none;
+}
+  
+.dropdown {
+    display: inline-block;
     position: relative;
-    
   }
   
-  ul.sidenav li a {
-    display: flex;
-    flex: 1;
-    padding: 7px;
-    font-size: 90%;
+  .dd-button {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
   }
   
-  ul.sidenav li h3 {
+  .dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  
+  .dd-button:hover {
+    background-color: #eeeeee;
+  }
+  
+  
+  .dd-input {
     display: none;
   }
-  div.content {margin-left: 0;}
-
-  ul.sidenav li a.active {
-width: 100%;
-
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+   
   }
+  
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .dd-menu li {
+    padding: 5px 30px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .dd-menu li h3 {
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 80%;
+   
+  }
+  
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
+
+
 }
 
 @media screen and (max-width: 400px) {
