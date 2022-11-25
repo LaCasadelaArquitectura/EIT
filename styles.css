@@ -5,11 +5,23 @@ body {
 }
 .main{
 display: block;
-margin-left: 15%;
+margin-left: 300px;
 margin-right: 15%;
+}
+#banderaeuropa{
+
+    display: inline-block;
+    
+    
+}
+#ne2one{
+    display: block;
+    float: right;
     
 
 }
+
+
 .dropdownn{
 
     display: none;
@@ -73,6 +85,55 @@ div.content {
   height: 1000px;
 }
 .dropbtn{display: none;}
+
+
+
+
+.h3 {
+    
+    font-size: 130%;
+    
+    background-color: rgba(81, 81, 81, 0.319); 
+}
+
+.p{
+    
+    font-size: 120%;
+    
+    border: 1px solid rgb(27, 27, 27);   
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+
+}
+
+.ct td{
+    margin-left: 11%;
+    font-size: 120%;
+    width: 76%;
+       
+
+
+}
+table, th, td {
+    border: 1px solid rgb(27, 27, 27);
+    border-collapse: collapse;
+    vertical-align: text-top;
+}
+
+ul.b {
+    list-style-type: square;
+    
+  }
+
+  h3{
+    margin-left: 11%;
+    font-size: 100%;
+  }
+  
+  th{
+font-size: 90%;
+
+  }
 
 @media screen and (max-width: 900px) {
     body{
@@ -181,5 +242,9 @@ div.content {
     border-bottom: 1px solid #cccccc;
   }
 
-
+  .main{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 }
